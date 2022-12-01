@@ -3,7 +3,6 @@ function outputButton(){
   const robotInput = document.getElementById("number-input");
   let outputCollector = [];
   const numberCollected = parseInt(robotInput.value);
-  console.log(numberCollected)
   for(i = 0; i < parseInt(numberCollected); i++ ){
     if (i.toString().includes("3")) {
       outputCollector.push([" Won't you be my neighbor?"]);
