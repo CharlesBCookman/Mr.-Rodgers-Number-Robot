@@ -19,8 +19,10 @@
 //   robotOutput.value = outputCollector.toString();
 // }
 function robotWork(number) {
+  const robotOutput = document.getElementById("robot-output");
   let outputCollector = [];
   for(i = 0; i <= number; i++){
+    console.log(i)
     if (i.toString().includes("3")) {
       outputCollector.push([" Won't you be my neighbor?"]);
     } else if(i.toString().includes("2")) {
@@ -33,17 +35,18 @@ function robotWork(number) {
       outputCollector.push(" " + i);
     }
   }
-  document.getElementById("robot-output").value = outputCollector;
+  robotOutput.value = outputCollector;
 }
 
 function outputButton() {
-  let robotOutput = document.getElementById("robot-output").value;
-  let robotInput = document.getElementById("number-input").value;
-  console.log(parseInt(robotInput));
-  if (parseInt(robotInput) === NaN) {
-    robotOutput = "This is not a number.";
-  } else { 
-    robotWork(parseInt(robotInput));
+  const robotOutput = document.getElementById("robot-output");
+  let robotInput = parseInt(document.getElementById("number-input").value);
+  console.log(robotInput);
+  if(isNaN(robotInput)){
+    console.log("is NaN condition triggered?");
+    robotOutput.value = "it's "+robotInput;
+  }else{ 
+    robotWork(robotInput);
   }
 }
 
