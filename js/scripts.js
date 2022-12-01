@@ -40,11 +40,13 @@ function robotWork(number) {
 
 function outputButton() {
   const robotOutput = document.getElementById("robot-output");
-  let robotInput = parseInt(document.getElementById("number-input").value);
+  const robotInput = parseInt(document.getElementById("number-input").value);
   console.log(robotInput);
   if(isNaN(robotInput)){
     console.log("is NaN condition triggered?");
-    robotOutput.value = "it's "+robotInput;
+    robotOutput.value = "Zip! Zap! This is not a number.";
+  } if(robotInput < 0) {
+    robotWork(-1*robotInput);
   }else{ 
     robotWork(robotInput);
   }
