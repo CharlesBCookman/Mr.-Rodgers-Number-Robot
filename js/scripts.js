@@ -19,39 +19,39 @@
 //   robotOutput.value = outputCollector.toString();
 // }
 function robotWork(number) {
-  const robotOutput = document.getElementById("robot-output");
-  let outputCollector = [];
+  let robotOutput = document.getElementById("robot-output");
+  let result = [];
   for(i = 0; i <= number; i++){
     console.log(i)
     if (i.toString().includes("3")) {
-      outputCollector.push([" Won't you be my neighbor?"]);
+      result.push([" Won't you be my neighbor?"]);
     } else if(i.toString().includes("2")) {
-      outputCollector.push([" Boop!"]);
+      result.push([" Boop!"]);
     } else if(i.toString().includes("1")) {
-      outputCollector.push([" Beep!"]);
+      result.push([" Beep!"]);
     } else if (i === 0) {
-      outputCollector.push(i);
+      result.push(i);
     } else if (true === true) {
-      outputCollector.push(" " + i);
+      result.push(" " + i);
     }
   }
-  robotOutput.value = outputCollector;
+  robotOutput.value = result;
 }
 
-function outputButton() {
-  const robotOutput = document.getElementById("robot-output");
-  const robotInput = parseInt(document.getElementById("number-input").value);
-  console.log(robotInput);
-  if(isNaN(robotInput)){
-    console.log("is NaN condition triggered?");
-    robotOutput.value = "Zip! Zap! This is not a number.";
-  } if(robotInput < 0) {
-    robotWork(-1*robotInput);
-  }else{ 
-    robotWork(robotInput);
+function outputButton(number) {
+  number = parseInt(document.getElementById("number-input").value);
+  console.log(number);
+  if (isNaN(number)){
+    console.log("is NaN condition triggered?")
+    document.getElementById("robot-output").value = "I eat numbers not... " + number;
+  } else if (number < 0) {
+    robotWork(-1*number);
+    console.log("is Negative condition triggered?")
+  } else if (parseInt(number) > 0){ 
+    robotWork(parseInt(number));
+    console.log("is possitive number function condition triggered?")
   }
 }
-
 
 window.addEventListener("load", function(){
   const robotButton = document.getElementById("robot-button");
