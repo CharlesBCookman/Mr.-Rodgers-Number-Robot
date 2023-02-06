@@ -2,7 +2,7 @@
 
 ### By _**{Charles Cookman}**_
 
-#### _{A webpage that takes a number and changes the numbers with the value 3, 2, and 1.}_
+#### _{A webpage that takes a number and changes the numbers with the number 3, 2, and 1.}_
 
 ## Technologies Used
 
@@ -15,7 +15,7 @@
 
 ## Description
 
-_{On the webpage it asks for in input for the number robot then outputs every number from 0 until that number and replaces any number 3 with wont you be my neighbor, 2 with Boop! and 1 with Beep! with respective priority.}_
+_{On the webpage it asks for in input for the number robot then outputs every number from 0 until that number and replaces any number 3 with wont you be my neighbor, 2 with Boop! and 1 with Beep! with respective priority. If negative numbers are input it turns them possitive and does the same thing listed above.}_
 
 ## Setup/Installation Requirement
 

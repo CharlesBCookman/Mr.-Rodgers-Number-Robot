@@ -1,0 +1,18 @@
+body {
+  background-image: url("https://images.unsplash.com/photo-1563396983906-b3795482a59a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2672&q=80");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: black;
+  background-position: center;
+}
+
+h1, h2, h4, div, form {
+  display: flex;
+  justify-content: center;
+  text-shadow: 1px;
+  color:black;
+  background-color: lavender;
+  max-width: 50%;
+  margin: 0 auto;
+  border: 5px grey ridge;
+}
