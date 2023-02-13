@@ -1,8 +1,8 @@
-# _{Mr. Rodgers Number Robot}
+# _Mr. Rodgers Number Robot_
 
-### By _**{Charles Cookman}**_
+### By _**Charles Cookman**_
 
-#### _{A webpage that takes a number and changes the numbers with the number 3, 2, and 1.}_
+#### _A webpage that takes a number and changes the numbers with the number 3, 2, and 1._
 
 ## Technologies Used
 
@@ -15,7 +15,7 @@
 
 ## Description
 
-_{On the webpage it asks for in input for the number robot then outputs every number from 0 until that number and replaces any number 3 with wont you be my neighbor, 2 with Boop! and 1 with Beep! with respective priority. If negative numbers are input it turns them possitive and does the same thing listed above.}_
+_On the webpage it asks for in input for the number robot then outputs every number from 0 until that number and replaces any number 3 with wont you be my neighbor, 2 with Boop! and 1 with Beep! with respective priority. If negative numbers are input it turns them possitive and does the same thing listed above._
 
 ## Setup/Installation Requirement
 
@@ -23,7 +23,7 @@ _{On the webpage it asks for in input for the number robot then outputs every nu
 * _Clone repository for instructions go to this webpage: https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository_
 * _Open html file into a web browser and use._
 
-_{I recomend setting up a live server though Visual Studio and viewing the page that way.}_
+_I recomend setting up a live server though Visual Studio and viewing the page that way._
 
 ## License
 
